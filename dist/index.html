@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mailer</title>
+    <!-- Custom styles -->
+
+</head>
+    <body>
+        <div class="text__base js-selector">
+            ABCDEFGHIJKLMNOPQRSTUVWXYZ
+            <!-- Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. -->
+            <dialog class="selector">
+                <p class="selector__title">Preview:</p>
+                <span onclick="document.querySelector('.selector').style.display='none'" class="selector__close">&times;</span>
+                <hr/>
+                <div class="selector__toolBox">
+                    <div class="selector__toolBox__item selector__properties js-selector__properties">
+                        <button class="selector__selectorButton" selector__tool="bold">Bold</button>
+                        <button class="selector__selectorButton" selector__tool="italic">Italic</button>
+                        <button class="selector__selectorButton" selector__tool="underline">Underline</button>
+                        <button class="selector__selectorButton" selector__tool="fontsize">FontSize</button>
+                    </div>
+                
+                    <div class="selector__toolBox__item">
+                        <form class="selector__markedProperties">
+                            <label for="selector__getMarkedStart">Start:
+                                <input type="text" class="selector__getMarked js-selector__getMarkedStart" name="selector__getMarkedStart">
+                            </label>
+                            <label for="selector__getMarkedEnd">End:
+                                <input type="text" class="selector__getMarked js-selector__getMarkedEnd" name="selector__getMarkedEnd">
+                            </label>
+                            <label for="selector__getMarkedLength">Length:
+                                <input type="text" class="selector__getMarked js-selector__getMarkedLength" name="selector__getMarkedLength">
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <hr/>
+                <p class="selector__title">Edit:</p>
+                <div class="selector__editView"></div>
+
+            </dialog>
+        </div>
+
+        <script src="bundle.js"></script>
+    </body>
+</html>

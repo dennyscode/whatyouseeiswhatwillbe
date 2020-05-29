@@ -1,0 +1,99 @@
+$body-color: gray;
+$feature-height: 50px;
+
+body {
+  background-color: $body-color;
+}
+
+.selector {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 7.5%;
+    z-index: 100;
+}
+
+.text__base {
+    height: 200px;
+    width: 60%;
+    margin: .5em auto;
+    border: 2px solid white;
+    border-radius: .5em;
+    padding: 1em;
+}
+
+.selector__errorMessage {
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 50%;
+    top:25%;
+    left: 25%;
+    z-index: 1000;
+    background-color: $body-color;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.selector__selectorButton {
+    display: block;
+    height: $feature-height;
+    flex-grow: 1;
+    /* margin: .5em 0; */
+}
+
+.selector__selectorTacho {
+    width:50%;
+}
+
+.selector__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    border: 1px solid black;
+    height: 1em;
+    width: 1em;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.selector__textPreview {
+    margin-top: 3em;
+}
+
+dialog:not([open]) {
+    display: none;
+}
+
+.selector__toolBox {
+    display: flex;
+    width: 100%;
+}
+
+.selector__toolBox__item {
+    width: 50%;
+    display: flex;
+}
+
+.selector__markedProperties {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.selector__getMarked {
+    height: $feature-height;
+}
+
+.selector__editView {
+    width: 80%;
+    margin: 2em auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+.selector__properties {
+}
